@@ -2,7 +2,7 @@
 
 **English** | [中文](#中文说明)
 
-**Go-Back-N ARQ Experiment Teaching Software**
+**Go-Back-N ARQ Experiment/Implementation Software**
 
 A visual simulator for the Go-Back-N ARQ sliding window protocol that I built as a project to practice and better understand Data Link Layer concepts, especially error control and flow control.
 
