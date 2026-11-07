@@ -7,7 +7,7 @@
 A visual simulator for the Go-Back-N ARQ sliding window protocol that I built as a project to practice and better understand Data Link Layer concepts, especially error control and flow control.
 
 ### WHY I BUILT THIS
-I built this tool while studying sliding window protocols, to see the Go-Back-N protocol actually running. It plays out frame by frame on a live channel, so every lost packet, every timeout, and every retransmission becomes something you can watch happen. I hope it helps other students too.
+I built this tool while studying sliding window protocols, to see the Go-Back-N protocol actually running. It plays out frame by frame on a live channel, so every lost packet, every timeout, and every retransmission becomes something you can watch happen.I hope it can help you too.
 
 ### WHAT IT DOES
 This is an interactive simulator of the Go-Back-N Automatic Repeat reQuest protocol. It models the sliding window mechanism used in the Data Link Layer, showing how a sender and receiver transfer data reliably over an unreliable channel. A live channel animates packets flowing between the two sides, and you can raise or lower the channel error rate to see how the protocol reacts to frame loss, frame corruption, and ACK loss.
@@ -15,32 +15,32 @@ This is an interactive simulator of the Go-Back-N Automatic Repeat reQuest proto
 ### KEY FEATURES
 * **Animated Channel:** The simulator shows an animated transmission channel, with the sender window sliding forward on each ACK and the receiver window only accepting frames in order. 
 * **Color-Coded States:** Each frame is colour-coded by its current state: sending, acked, lost, corrupted, or timed-out.
-* **Flexible Input:** You can type a message of up to thirteen characters (each character becomes one packet), or enter a packet count between one and thirteen (packets are labelled A, B, C, etc.).
+* **Flexible Input:** You can type a message of up to i.e thirteen characters (each character becomes one packet), or enter a packet count i.e between one and thirteen (packets are labelled A, B, C, etc.).
 * **Adjustable Parameters:** Window size, timeout duration, and channel error rate are all adjustable before each run.
 * **Real-time Tracking:** The interface tracks frames sent, frames acked, retransmissions, timeouts, and efficiency while the simulation runs.
 * **Graphs & Logs:** The Run Tests button opens a window with a history table and graphs comparing efficiency, retransmissions, and timeouts. Every event is also written to a transmission log panel.
 
 ### GETTING STARTED
-To run this project you need **Python 3.10 or higher**, **Tkinter** (bundled with most Python installations), and **Matplotlib** for the graphs window.
+To run this project you need at least **Python 3.10 or higher**, **Tkinter** (bundled with most Python installations), and **Matplotlib** for the graphs window.
 
-1. Clone the repository using `git clone`.
+1. Clone the repository using 'git clone'.
 2. Navigate into the folder.
-3. Install the only external dependency with `pip install matplotlib`.
-4. Launch the app by running `python main.py`.
+3. Install the only external dependency with 'pip install matplotlib'.
+4. Launch the app by running 'python main.py'.
 5. On the welcome screen, click **CLICK HERE TO ENTER THE SOFTWARE**. On the next page, click **ENTER EXPERIMENT PLATFORM**.
 
 ### PROJECT STRUCTURE
 The project has five main files:
-* `main.py`: The entry point and handles the welcome page, intro page, and navigation.
-* `experiment.py`: Contains the simulation engine, the full interface, animation logic, and the graph window.
-* `packet.py`: Defines the Packet class with helpers for converting packets to and from JSON.
-* `checksum.py`: Contains the checksum functions used to detect corrupted frames.
-* `config.json`: Generated automatically at runtime and stores your last-used settings.
+* 'main.py': The entry point and handles the welcome page, intro page, and navigation.
+* 'experiment.py': Contains the simulation engine, the full interface, animation logic, and the graph window.
+* 'packet.py': Defines the Packet class with helpers for converting packets to and from JSON.
+* 'checksum.py': Contains the checksum functions used to detect corrupted frames.
+* 'config.json': Generated automatically at runtime and stores your last-used settings.
 
 ### USAGE GUIDE
-* **Step 1: Provide Data.** Click **Enter Data** and choose one of two input modes: type a message (up to 13 chars) or enter a packet count (1-13).
+* **Step 1: Provide Data.** Click **Enter Data** and choose one of two input modes: type a message (up to 13 chars) or enter packets number (1-13).
 * **Step 2: Configure Protocol.** Use **Set Window Size**, **Set Timeout**, and **Set Channel Error Rate** to choose your parameters.
-* **Step 3: Run Simulation.** Press **START SIMULATION**. If a timeout happens, the simulation pauses and **RESUME** becomes available. **STOP** halts the current run and records it in the history. **CLEAR ALL RESET** wipes the state, data, and history.
+* **Step 3: Run Simulation.** Press **START SIMULATION**. If a timeout happens, the simulation pauses and **RESUME** becomes available,so you can click it. **STOP** halts the current run and records it in the history. **CLEAR ALL RESET** wipes the state, data, and history.
 * **Step 4: Look at Results.** Click **Run Tests** in the top bar to open a window showing a history table and graphs comparing efficiency, retransmissions, and timeouts against the error rate.
 
 ### HOW THE PROTOCOL WORKS
@@ -76,23 +76,23 @@ The tool makes an abstract protocol easier to picture. You can watch the sliding
 
 ### CONTRIBUTING & LICENSE
 Please contact the author before using, modifying, or distributing this project.
-All rights reserved. See the LICENSE file for the copyright and permission notice.
+See the LICENSE file for the copyright and permission notice.
 
 ### AUTHOR
-**MALON**
+**MUZANENHAMO MALON**
 
 If this project helped you understand Go-Back-N ARQ, consider giving it a star on GitHub.
 
-Made with Python.
+Built in Python.
 
 --------------------------------------------
 
 ## 中文说明
 
-这是一个基于 Python 开发的 **Go-Back-N (后退N帧) ARQ 协议可视化模拟器**。我写这个项目，主要是为了在实战中加深对数据链路层（特别是差错控制和流量控制）的理解。
+这是一个基于 Python 开发的 **Go-Back-N (后退N帧) ARQ 协议可视化模拟器**。我开发了这个项目，主要是为了在实战中加深对数据链路层（特别是差错控制和流量控制）的理解。
 
 ### 为什么做这个项目？
-在学习滑动窗口协议时，我希望能直观地“看到” Go-Back-N 是如何运行的。这个工具可以在实时信道上逐帧演示通信过程，丢包，超时，重传这些抽象概念，全都能变成肉眼可见的动画。希望它也能帮到其他正在学习网络协议的同学们。
+在学习滑动窗口协议时，我一直希望能直观地“看到” Go-Back-N 是如何运行的。这个工具可以在实时信道上逐帧演示通信过程，丢包，超时，重传这些抽象概念，全都能变成肉眼可见的动画。希望它也能帮到在学习网络协议的你们。
 
 ### 功能简介
 这是一个交互式的 Go-Back-N ARQ 模拟器。它模拟了数据链路层的滑动窗口机制，展示了发送端和接收端如何在一个不可靠的信道上实现可靠传输。你可以随时调高或调低信道的误码率，观察协议面对帧丢失，帧损坏和 ACK 丢失时的反应。发送窗口会随着 ACK 的到达向前滑动，而接收窗口只按序接收。每个数据帧都有颜色编码（如发送中，已确认，丢失，损坏，超时），一目了然。
@@ -115,14 +115,14 @@ Made with Python.
 ### 项目结构
 项目包含五个主要文件，各司其职：
 *   main.py：程序入口，负责欢迎页，介绍页以及页面间的路由。
-*   experiment.py：核心模拟引擎，包含完整的 UI 界面、动画逻辑和图表生成。
+*   experiment.py：核心模拟引擎，包含完整的 UI 界面，动画逻辑和图表生成。
 *   packet.py：定义 Packet 类，以及数据包与 JSON 格式互转的工具函数。
 *   checksum.py：实现简单的字节和校验（byte-sum checksum），用于检测损坏帧。
 *   config.json：程序运行时自动生成，用于保存你上一次的参数设置。
 
 ### 使用指南
 *   **第一步：输入数据**。点击“Enter Data”，输入一段最多 13 个字符的消息，或者输入 1-13 的数据包数量。
-*   **第二步：配置协议**。设置窗口大小、发送端等待 ACK 的超时时间，以及 0-100% 的信道误码率。
+*   **第二步：配置协议**。设置窗口大小，发送端等待 ACK 的超时时间，以及 0-100% 的信道误码率。
 *   **第三步：运行模拟**。点击“START SIMULATION”开始。发生超时时，程序会暂停，你可以点击“RESUME”继续观察；点击“STOP”结束当前运行并记录到历史；点击“CLEAR ALL RESET”清除所有状态和数据。
 *   **第四步：查看结果**。点击顶部的“Run Tests”，查看历史数据表以及效率，重传，超时随误码率变化的对比图表。
 
@@ -140,7 +140,7 @@ Made with Python.
 *   71%-100%：**窗口崩溃 (Window Collapse)**。协议陷入无限重传，直观展示协议失效的场景。
 
 ### 性能指标
-模拟器会实时追踪五个数据：
+模拟器会实时追踪五个数据场景或情况：
 *   **已发送帧数**：包含重传在内的所有传输。
 *   **已确认帧数**：成功收到 ACK 的帧数。
 *   **重传次数**：超时或出错后重发的帧数。
@@ -160,10 +160,10 @@ Made with Python.
 
 ### 贡献与许可
 如需使用，修改或分发本项目，请先联系作者。
-保留所有权利。详情请参阅 LICENSE 文件。
+详情请参阅 LICENSE 文件。
 
 ### 作者
-**MALON**
+**马龙**
 
 如果这个项目帮你搞懂了 Go-Back-N ARQ，欢迎在 GitHub 上点个 Star。
 
