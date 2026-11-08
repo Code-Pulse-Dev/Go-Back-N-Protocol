@@ -11,7 +11,7 @@ A visual simulator for the Go-Back-N ARQ sliding window protocol that I built as
 
 
 ### WHY I BUILT THIS
-I built this tool while studying sliding window protocols, to see the Go-Back-N protocol actually running. It plays out frame by frame on a live channel, so every lost packet, every timeout, and every retransmission becomes something you can watch happen.I hope it can help you too.
+I built this tool while studying sliding window protocols,to visualize the practical simulation and implementation of the Go-Back-N protocol. It plays out frame by frame on a live channel, so every lost packet, every timeout, and every retransmission becomes something you can watch happen.I hope it can help you too.
 
 ### WHAT IT DOES
 This is an interactive simulator of the Go-Back-N Automatic Repeat reQuest protocol. It models the sliding window mechanism used in the Data Link Layer, showing how a sender and receiver transfer data reliably over an unreliable channel. A live channel animates packets flowing between the two sides, and you can raise or lower the channel error rate to see how the protocol reacts to frame loss, frame corruption, and ACK loss.
