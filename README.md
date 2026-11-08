@@ -7,7 +7,7 @@
 A visual simulator for the Go-Back-N ARQ sliding window protocol that I built as a project to practice and better understand Data Link Layer concepts, especially error control and flow control.
 
 
-< img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
+<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
 
 
 ### WHY I BUILT THIS
@@ -34,11 +34,11 @@ To run this project you need at least **Python 3.10 or higher**, **Tkinter** (bu
 5. On the welcome screen, click **CLICK HERE TO ENTER THE SOFTWARE**. On the next page, click **ENTER EXPERIMENT PLATFORM**.
 
 
-< img width="960" height="509" alt="image" src="https://github.com/user-attachments/assets/3a64ca57-ebd6-46b7-aeb7-25c2c8c4985f" />
+<img width="960" height="509" alt="image" src="https://github.com/user-attachments/assets/3a64ca57-ebd6-46b7-aeb7-25c2c8c4985f" />
 
 
 
-  < img width="960" height="512" alt="image" src="https://github.com/user-attachments/assets/b6a33719-55d1-405b-9202-9e1c1c5c3dbd" />
+  <img width="960" height="512" alt="image" src="https://github.com/user-attachments/assets/b6a33719-55d1-405b-9202-9e1c1c5c3dbd" />
 
 
 ### PROJECT STRUCTURE
@@ -104,7 +104,7 @@ Built in Python.
 这是一个基于 Python 开发的 **Go-Back-N (后退N帧) ARQ 协议可视化模拟器**。我开发了这个项目，主要是为了在实战中加深对数据链路层（特别是差错控制和流量控制）的理解。
 
 
-< img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
+<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
 
 
 ### 为什么做这个项目？
@@ -128,10 +128,10 @@ Built in Python.
 4. 运行程序：python main.py
 5. 在欢迎界面点击“CLICK HERE TO ENTER THE SOFTWARE”，进入后点击“ENTER EXPERIMENT PLATFORM”。在左侧面板设置好参数，点击“START SIMULATION”即可开始。
 
-< img width="960" height="509" alt="image" src="https://github.com/user-attachments/assets/3a64ca57-ebd6-46b7-aeb7-25c2c8c4985f" />
+<img width="960" height="509" alt="image" src="https://github.com/user-attachments/assets/3a64ca57-ebd6-46b7-aeb7-25c2c8c4985f" />
 
 
-   < img width="960" height="512" alt="image" src="https://github.com/user-attachments/assets/a99de915-c12b-4c8e-bd6e-b750a1d76d7a" />
+   <img width="960" height="512" alt="image" src="https://github.com/user-attachments/assets/a99de915-c12b-4c8e-bd6e-b750a1d76d7a" />
 
 
 ### 项目结构
