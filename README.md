@@ -6,6 +6,10 @@
 
 A visual simulator for the Go-Back-N ARQ sliding window protocol that I built as a project to practice and better understand Data Link Layer concepts, especially error control and flow control.
 
+
+<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
+
+
 ### WHY I BUILT THIS
 I built this tool while studying sliding window protocols, to see the Go-Back-N protocol actually running. It plays out frame by frame on a live channel, so every lost packet, every timeout, and every retransmission becomes something you can watch happen.I hope it can help you too.
 
@@ -91,6 +95,10 @@ Built in Python.
 
 这是一个基于 Python 开发的 **Go-Back-N (后退N帧) ARQ 协议可视化模拟器**。我开发了这个项目，主要是为了在实战中加深对数据链路层（特别是差错控制和流量控制）的理解。
 
+
+<img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
+
+
 ### 为什么做这个项目？
 在学习滑动窗口协议时，我一直希望能直观地“看到” Go-Back-N 是如何运行的。这个工具可以在实时信道上逐帧演示通信过程，丢包，超时，重传这些抽象概念，全都能变成肉眼可见的动画。希望它也能帮到在学习网络协议的你们。
 
@@ -168,3 +176,4 @@ Built in Python.
 如果这个项目帮你搞懂了 Go-Back-N ARQ，欢迎在 GitHub 上点个 Star。
 
 基于 Python 构建。
+
