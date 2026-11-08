@@ -1,0 +1,8 @@
+{
+    "window_size": 3,
+    "timeout": 3.0,
+    "host": "127.0.0.1",
+    "port": 5000,
+    "message": "111111111111111111111111111",
+    "error_rate": null
+}
