@@ -4,8 +4,7 @@
 
 **Go-Back-N ARQ Experiment/Implementation Software**
 
-A visual simulator for the Go-Back-N ARQ sliding window protocol that I built as a project to practice and better understand Data Link Layer concepts, especially error control and flow control.
-
+A visual and interactive simulator for the Go-Back-N ARQ sliding window protocol. It models the Data Link Layer concepts of error control and flow control through a live, frame-by-frame animation.
 
 <img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
 
@@ -101,14 +100,14 @@ Built in Python.
 
 ## 中文说明
 
-这是一个基于 Python 开发的 **Go-Back-N (后退N帧) ARQ 协议可视化模拟器**。我开发了这个项目，主要是为了在实战中加深对数据链路层（特别是差错控制和流量控制）的理解。
+这是一个基于 Python 开发的 Go-Back-N (后退N帧) ARQ 协议可视化交互模拟器。它通过实时、逐帧的动画，生动地展示了数据链路层中的差错控制和流量控制机制。
 
 
 <img width="960" height="510" alt="image" src="https://github.com/user-attachments/assets/68918d38-c9f4-4173-94a1-b7a37310fd29" />
 
 
 ### 为什么做这个项目？
-在学习滑动窗口协议时，我一直希望能直观地“看到” Go-Back-N 是如何运行的。这个工具可以在实时信道上逐帧演示通信过程，丢包，超时，重传这些抽象概念，全都能变成肉眼可见的动画。希望它也能帮到在学习网络协议的你们。
+我在学习滑动窗口协议时开发了这个工具，目的是为了直观地模拟和实现 Go-Back-N 协议的实际运行过程。丢包、超时、重传这些抽象概念，全都能变成肉眼可见的动画。希望它也能帮到正在学习网络协议的你们。
 
 ### 功能简介
 这是一个交互式的 Go-Back-N ARQ 模拟器。它模拟了数据链路层的滑动窗口机制，展示了发送端和接收端如何在一个不可靠的信道上实现可靠传输。你可以随时调高或调低信道的误码率，观察协议面对帧丢失，帧损坏和 ACK 丢失时的反应。发送窗口会随着 ACK 的到达向前滑动，而接收窗口只按序接收。每个数据帧都有颜色编码（如发送中，已确认，丢失，损坏，超时），一目了然。
